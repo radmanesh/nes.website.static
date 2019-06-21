@@ -1,0 +1,139 @@
+///* Vars go before the @import */
+@import url('fonts.googleapis.com/css?family=Rubik:400,700|Montserrat:700');
+$primary-font: 'Rubik', sans-serif;
+$bold-font: 'Montserrat', sans-serif;
+$regular: 400;
+$bold: 700;
+//$light: 300;
+$letter-spacing: 0;
+// Theme Colors
+// $primary: #eb586f;
+// $primary-hover: #d14e63;
+// $success: #87c056;
+// $success-hover: #74a44a;
+// $info: #4da5e2;
+// $info-hover: #428fc4;
+// $warning: #ffcc66;
+// $warning-hover: #e1b459;
+// $danger: #ec7160;
+// $danger-hover: #cd6254;
+// $title-color: #444;
+// $sub-title-color: #999;
+// $text-color: #ff1188; //#444;
+// $bg-color: #f7f7f7;
+// $dark-bg-color: #222;
+// $body-bg: #ffffff;
+// $white: #fff;
+// $light-grey: #ddd;
+// $grey: #ccc;
+// $dark-grey: #333;
+// $black: #000;
+// Social Colors
+// $facebook: #4e68a1;
+// $facebook-hover: #3b4f7a;
+// $twitter: #65b5f2;
+// $twitter-hover: #5294c6;
+// $google: #e05d4b;
+// $google-hover: #b94c3d;
+// $linkedin: #2083bc;
+// $linkedin-hover: #186592;
+// $pinterest: #d2373b;
+// $pinterest-hover: #ad2c2f;
+// $dribbble: #ec5f94;
+// $dribbble-hover: #b4446e;
+// /* Import the Bootstrap files */
+@import 'bootstrap/bootstrap';
+$section-padding: $spacer * 2;
+$section-alt-bg-color: $gray-100;
+$section-alt-text-color: $gray-800;
+
+///* Custom CSS */
+body {
+  background: $body-bg;
+  color: $body-color;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: $regular;
+  letter-spacing: $letter-spacing;
+  line-height: 20px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.nes-header {
+  background-image: url("../../assets/img/header-3-bg.jpg");
+  background-size: cover;
+  //height: 75vh;
+  min-height: 75vh;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+
+  .header-container {
+    padding-bottom: 10vh;
+    padding-top: 20vh;
+    text-align: center;
+
+    .header-title {}
+  }
+}
+
+.nes-section {
+  padding-bottom: $section-padding  ;
+  padding-top: $section-padding;
+
+  &.section-alt {
+    background-color: $section-alt-bg-color !important;
+    color: $section-alt-text-color !important;
+  }
+}
+
+.section-title {
+  @extend .pb-3;
+  text-align: center;
+}
+
+.service-container {
+  .service-icon {
+    //border-radius: 50%;
+    //padding: .2rem;
+  }
+
+  .service-title {
+    text-align: center;
+  }
+
+  .service-description {
+    text-align: justify;
+  }
+}
+
+.about-description {
+  blockquote {
+    border: 0;
+    color: #a2a2a2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    padding-left: 0;
+
+    &::before {
+      color: #bcbcbc;
+      content: '\f10d';
+      font-family: 'FontAwesome';
+      font-size: 36px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}
+
+footer.footer {}
