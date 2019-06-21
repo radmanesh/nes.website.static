@@ -1,5 +1,5 @@
 ///* Vars go before the @import */
-@import url('fonts.googleapis.com/css?family=Rubik:400,700|Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700|Montserrat:700');
 $primary-font: 'Rubik', sans-serif;
 $bold-font: 'Montserrat', sans-serif;
 $regular: 400;
@@ -136,4 +136,70 @@ img {
   }
 }
 
+.news-summary{
+  img.bd-placeholder-img{
+    max-width: 200px;
+    @extend .my-auto;
+  }
+}
+
 footer.footer {}
+
+
+// Blog/News
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/*
+ * Blog name and description
+ */
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+@media (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}

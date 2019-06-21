@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,700|Montserrat:700");
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -9587,7 +9589,8 @@ button.bg-dark:focus {
 }
 
 .mt-auto,
-.my-auto {
+.my-auto,
+.news-summary img.bd-placeholder-img {
     margin-top: auto !important;
 }
 
@@ -9597,7 +9600,8 @@ button.bg-dark:focus {
 }
 
 .mb-auto,
-.my-auto {
+.my-auto,
+.news-summary img.bd-placeholder-img {
     margin-bottom: auto !important;
 }
 
@@ -11768,4 +11772,75 @@ img {
     font-size: 36px;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+.news-summary img.bd-placeholder-img {
+    max-width: 200px;
+}
+
+.card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+}
+
+.h-250 {
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+    .h-md-250 {
+        height: 250px;
+    }
+}
+
+/*
+ * Blog name and description
+ */
+.blog-title {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.blog-description {
+    font-size: 1.1rem;
+    color: #999;
+}
+
+@media (min-width: 40em) {
+    .blog-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Pagination */
+.blog-pagination {
+    margin-bottom: 4rem;
+}
+
+.blog-pagination > .btn {
+    border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+    margin-bottom: 4rem;
+}
+
+.blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+}
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #999;
 }
