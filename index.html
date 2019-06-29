@@ -13,7 +13,7 @@
   <body>
     <!-- Header -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">NES</a>
+      <a class="navbar-brand" href="index.html"><img src="assets/img/nes-logo.png" class="brand-img"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nesNavbar" aria-controls="nesNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -22,14 +22,31 @@
           <li class="nav-item active" data-pgc-field="menu-home">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item" data-pgc-field="menu-services">
-            <a class="nav-link" href="services.html">Services</a>
+          <li class="nav-item" data-pgc-field="menu-mission">
+            <a class="nav-link" href="mission.html">Our Mission</a>
           </li>
-          <li class="nav-item" data-pgc-field="menu-portfolio">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <li class="nav-item dropdown" data-pgc-field="menu-services">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services </a>
+            <div class="dropdown-menu" aria-labelledby="serviesDropdown">
+              <a class="dropdown-item" href="services.html">Drilling and Sampling</a>
+              <a class="dropdown-item" href="services-mapping.html">Subsurface Mapping</a>
+            </div>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-markets">
+            <a class="nav-link" href="markets.html">Markets</a>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-knowledge">
+            <a class="nav-link" href="knowledge.html">Knowledge</a>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-careers">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-equipments">
+            <a class="nav-link" href="equipments.html">Equipments</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-blog">
-            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="blog.html">News</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-about">
             <a class="nav-link" href="about.html">About</a>
@@ -42,35 +59,131 @@
         <div class="container ">
           <div class="header-container  ">
             <h1 class="header-title">Nikan Exploration Services</h1>
-            <p class="header-description">opus irumopus irumopus irumopus irumopus irumopus irumopus irumopus irumopus irumopus irumopus irumopus irum</p>
-            <a href="#" class="btn btn-info">learn more</a>
+            <p class="header-description">
+  That is our destiny and we in NES trying to bring the utmost quality in our work to assure the society that they are receiving the highest level of service that they deserve. </p>
+            <a href="about.html" class="btn btn-info">learn more</a>
           </div>
         </div>
       </div>
       <section class="nes-section services-section">
         <div class="container">
-          <h1 class="section-title pb-3">Services</h1>
-          <div class="row">
-            <div class="col-md-4 service-container card">
+          <h1 class="section-title">Services</h1>
+          <h2 class="section-subtitle">Geotechnical Drilling and Sampling</h2>
+          <div class="row pb-3">
+            <div class="col-md-3 service-container">
               <div class="text-center">
                 <span class="fa-stack fa-2x"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fas fa-wrench fa-stack-1x fa-inverse"></i> </span>
               </div>
-              <h3 class="service-title">Column title</h3>
-              <p class="service-description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h3 class="service-title">Boring Layout</h3>
+              <p class="service-description">
+                NES can locate and mark the boring locations by utilizing handheld GPS equipment such as GARMIN GPSMAP series. </p>
+              <a class="btn btn-primary" href="services.html#boring-layout" role="button">Read More</a>
             </div>
-            <div class="col-md-4 service-container">
+            <div class="col-md-3 service-container">
               <div class="text-center">
                 <span class="fa-stack fa-2x"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fas fa-truck-monster fa-stack-1x fa-inverse"></i> </span>
               </div>
-              <h3 class="service-title">Column title</h3>
-              <p class="service-description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h3 class="service-title">Boring Elevations and Sampling Depths</h3>
+              <p class="service-description">
+                The relative elevation at each boring location can be determined by utilizing a theodolite unit. As the minimum, the sampling depths will be measured from the existing ground surface at the time of our field activities and will be reported in our field logs. </p>
+              <a class="btn btn-primary" href="services.html#boring-layout" role="button">Read More</a>
+            </div>
+            <div class="col-md-3 service-container">
+              <div class="text-center">
+                <span class="fa-stack fa-2x"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fas fa-truck-monster fa-stack-1x fa-inverse"></i> </span>
+              </div>
+              <h3 class="service-title">Subsurface Exploration Procedures</h3>
+              <p class="service-description">
+                We drill soil borings with our truck-mounted drilling equipment using continuous flight augers (solid stem or hollow stem) to either the termination depth of the borings or auger refusal depth whichever reach first. Soil samples will be collected at depths requested by the client. </p>
+              <a class="btn btn-primary" href="services.html#boring-layout" role="button">Read More</a>
+            </div>
+            <div class="col-md-3 service-container">
+              <div class="text-center">
+                <span class="fa-stack fa-2x"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fas fa-truck-monster fa-stack-1x fa-inverse"></i> </span>
+              </div>
+              <h3 class="service-title">Property Disturbance</h3>
+              <p class="service-description">
+                After completion of drilling and field testing, we backfilled our boring with auger cuttings and distribute the remained auger cutting in vicinity of borings. </p>
+              <a class="btn btn-primary" href="services.html#boring-layout" role="button">Read More</a>
+            </div>
+          </div>
+          <h2 class="section-subtitle">Non-Invasive Subsurface Mapping</h2>
+          <p>
+            Non-invasive subsurface mapping is utilizing the most recent applications of geophysics to draw a 2D or 3D images of what is underlying an innocent surface. </p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Capability</th>
+                  <th>Report Type SUM-Basic</th>
+                  <th>Report Type SUM-PRO</th>
+                  <th>Report Type SUM-ULT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>The information regarding the scope of work and utilized methods</td>
+                  <td><span class="fas fa-check text-success"></span></td>
+                  <td><span class="fas fa-check text-success"></span></td>
+                  <td><span class="fas fa-check text-success"></span></td>
+                </tr>
+                <tr>
+                  <td>Pictures of the marked locations at the site</td>
+                  <td><span class="fas fa-check text-success"></span></td>
+                  <td><span class="fas fa-check text-success"></span></td>
+                  <td><span class="fas fa-check text-success"></span></td>
+                </tr>
+                <tr>
+                  <td>Plan of the site and underground utilities</td>
+                  <td><span class="fas fa-times text-danger"></span></td>
+                  <td><span class="fas fa-check text-success"></span></td>
+                  <td><span class="fas fa-check text-success"></span></td>
+                </tr>
+                <tr>
+                  <td>3D model of the utilities over a Google Earth file</td>
+                  <td><span class="fas fa-times text-danger"></span></td>
+                  <td><span class="fas fa-times text-danger"></span></td>
+                  <td><span class="fas fa-check text-success"></span></td>
+                </tr>
+                <tr>
+                  <td>Eyebird view of the marked existing utility locations at site by utilizing drone technology</td>
+                  <td><span class="fas fa-times text-danger"></span></td>
+                  <td><span class="fas fa-times text-danger"></span></td>
+                  <td><span class="fas fa-check text-success"></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-md-4 service-container">
+              <div class="text-center">
+                <span class="fa-stack fa-2x"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fas fa-wrench fa-stack-1x fa-inverse"></i> </span>
+              </div>
+              <h3 class="service-title">Report Type SUM-Basic</h3>
+              <p class="service-description"> <ul class="list-unstyled">
+                  <li>
+                    <span class="fas fa-check text-success"></span> The information regarding the scope of work and utilized methods
+                  </li>
+                  <li>
+                    <span class="fas fa-check text-success"></span> Pictures of the marked locations at the site
+                  </li>
+                </ul> </p>
+              <a class="btn btn-primary" href="services.html#boring-layout" role="button">Read More</a>
             </div>
             <div class="col-md-4 service-container">
               <div class="text-center">
-                <span class="fa-stack fa-2x"> <i class="fas fa-square fa-stack-2x"></i> <i class="fas fa-cogs fa-stack-1x fa-inverse"></i> </span>
+                <span class="fa-stack fa-2x"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fas fa-wrench fa-stack-1x fa-inverse"></i> </span>
               </div>
-              <h3 class="service-title">Column title</h3>
-              <p class="service-description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h3 class="service-title">Report Type SUM-PRO</h3>
+              <p class="service-description"> <ul class="list-unstyled">
+                  <li>
+                    <span class="fas fa-check text-success"></span> The information regarding the scope of work and utilized methods
+                  </li>
+                  <li>
+                    <span class="fas fa-check text-success"></span> Pictures of the marked locations at the site
+                  </li>
+                </ul> </p>
+              <a class="btn btn-primary" href="services.html#boring-layout" role="button">Read More</a>
             </div>
           </div>
         </div>
@@ -80,11 +193,9 @@
           <h1 class="section-title">About Us</h1>
           <div class="about-description">
             <p class="">
-            Ei mel semper vocent persequeris, nominavi patrioque vituperata id vim, cu eam gloriatur philosophia deterruisset. Meliore perfecto repudiare ea nam, ne mea duis temporibus. Id quo accusam consequuntur, eum ea debitis urbanitas. Nibh
-            reformidans vim ne. </p>
-            <blockquote class="">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-</blockquote>
+We are providing exploration services, please see our Services page to have a better understanding that in which areas we can help you. </p>
+            <p class="small">
+              We in NES are trying to bring the utmost quality in our work to assure the society that they are receiving the highest level of service that they deserve. </p>
           </div>
         </div>
       </section>
@@ -193,10 +304,13 @@
                   <a href="about.html" class="text-muted">Our company</a>
                 </li>
                 <li>
+                  <a href="mission.html" class="text-muted">Our mission</a>
+                </li>
+                <li>
                   <a href="services.html" class="text-muted">Our services</a>
                 </li>
                 <li>
-                  <a href="prices.html" class="text-muted">Prices</a>
+                  <a href="knowledge.html" class="text-muted">Knowledge</a>
                 </li>
                 <li>
                   <a href="blog.html" class="text-muted">News</a>
@@ -208,9 +322,9 @@
             <div class="widget">
               <h5 class="text-light">Get in touch</h5>
               <address class="text-white-50"> <strong>Nikan Exploration Services</strong><br>
-							Somestreet 200 VW, Suite Village A.001<br>
-							Texas 13426 USA </address>
-              <p class="text-white-50"> <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br> <i class="icon-envelope-alt"></i> email@domainname.com </p>
+							1234 Sunshine Street<br>
+							Midland Texas 77027, USA </address>
+              <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nikanexp.com </p>
             </div>
           </div>
           <div class="col-6 col-md">

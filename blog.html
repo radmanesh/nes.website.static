@@ -13,7 +13,7 @@
   <body>
     <!-- Header -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">NES</a>
+      <a class="navbar-brand" href="index.html"><img src="assets/img/nes-logo.png" class="brand-img"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nesNavbar" aria-controls="nesNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -22,14 +22,31 @@
           <li class="nav-item" data-pgc-field="menu-home">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item" data-pgc-field="menu-services">
-            <a class="nav-link" href="services.html">Services</a>
+          <li class="nav-item" data-pgc-field="menu-mission">
+            <a class="nav-link" href="mission.html">Our Mission</a>
           </li>
-          <li class="nav-item" data-pgc-field="menu-portfolio">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <li class="nav-item dropdown" data-pgc-field="menu-services">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services </a>
+            <div class="dropdown-menu" aria-labelledby="serviesDropdown">
+              <a class="dropdown-item" href="services.html">Drilling and Sampling</a>
+              <a class="dropdown-item" href="services-mapping.html">Subsurface Mapping</a>
+            </div>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-markets">
+            <a class="nav-link" href="markets.html">Markets</a>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-knowledge">
+            <a class="nav-link" href="knowledge.html">Knowledge</a>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-careers">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-equipments">
+            <a class="nav-link" href="equipments.html">Equipments</a>
           </li>
           <li class="nav-item active" data-pgc-field="menu-blog">
-            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="blog.html">News</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-about">
             <a class="nav-link" href="about.html">About</a>
@@ -41,8 +58,7 @@
       <main role="main" class="container pt-3">
         <div class="row">
           <div class="col-md-8 blog-main">
-            <h3 class="pb-4 mb-4 font-italic border-bottom">
-              NES Articles </h3>
+            <h3 class="pb-4 mb-4 font-italic border-bottom">News</h3>
             <div class="blog-post">
               <h2 class="blog-post-title">Sample blog post</h2>
               <p class="blog-post-meta">January 1, 2014</p>
@@ -152,10 +168,13 @@
                   <a href="about.html" class="text-muted">Our company</a>
                 </li>
                 <li>
+                  <a href="mission.html" class="text-muted">Our mission</a>
+                </li>
+                <li>
                   <a href="services.html" class="text-muted">Our services</a>
                 </li>
                 <li>
-                  <a href="prices.html" class="text-muted">Prices</a>
+                  <a href="knowledge.html" class="text-muted">Knowledge</a>
                 </li>
                 <li>
                   <a href="blog.html" class="text-muted">News</a>
@@ -167,9 +186,9 @@
             <div class="widget">
               <h5 class="text-light">Get in touch</h5>
               <address class="text-white-50"> <strong>Nikan Exploration Services</strong><br>
-							Somestreet 200 VW, Suite Village A.001<br>
-							Texas 13426 USA </address>
-              <p class="text-white-50"> <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br> <i class="icon-envelope-alt"></i> email@domainname.com </p>
+							1234 Sunshine Street<br>
+							Midland Texas 77027, USA </address>
+              <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nikanexp.com </p>
             </div>
           </div>
           <div class="col-6 col-md">

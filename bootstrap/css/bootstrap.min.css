@@ -9358,6 +9358,7 @@ button.bg-dark:focus {
 }
 
 .pb-1,
+.section-subtitle,
 .py-1 {
     padding-bottom: 0.25rem !important;
 }
@@ -11720,10 +11721,54 @@ img {
     width: 100%;
 }
 
+.navbar-brand > img {
+    height: 1.875rem;
+    width: auto;
+}
+
+.navbar-dark .dropdown-menu {
+    background-color: #212529;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar-dark .dropdown-menu .dropdown-item {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-dark .dropdown-menu .dropdown-item:hover,
+.navbar-dark .dropdown-menu .dropdown-item:focus {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-dark .dropdown-menu .dropdown-item.disabled {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-dark .dropdown-menu .dropdown-item.active,
+.navbar-dark .dropdown-menu .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+}
+
+.navbar-dark .dropdown-menu .dropdown-item:hover,
+.navbar-dark .dropdown-menu .dropdown-item:focus {
+    color: white;
+    background-color: #212529;
+}
+
+.navbar-dark .dropdown-menu .dropdown-divider {
+    height: 0;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #343a40;
+}
+
 .nes-header {
     background-image: url("../../assets/img/header-3-bg.jpg");
     background-size: cover;
-    min-height: 75vh;
+    min-height: 50vh;
     padding-bottom: 3rem;
     padding-top: 3rem;
 }
@@ -11745,6 +11790,10 @@ img {
 }
 
 .section-title {
+    text-align: center;
+}
+
+.section-subtitle {
     text-align: center;
 }
 
@@ -11836,7 +11885,7 @@ img {
 }
 
 .blog-post-title {
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
     font-size: 2.5rem;
 }
 

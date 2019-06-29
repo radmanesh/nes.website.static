@@ -6,6 +6,7 @@ $regular: 400;
 $bold: 700;
 //$light: 300;
 $letter-spacing: 0;
+
 // Theme Colors
 // $primary: #eb586f;
 // $primary-hover: #d14e63;
@@ -47,6 +48,20 @@ $section-padding: $spacer * 2;
 $section-alt-bg-color: $gray-100;
 $section-alt-text-color: $gray-800;
 
+// Dropdown menu container and contents.
+$dropdown-dark-color: rgba($white, .5) !default;
+$dropdown-dark-bg: $gray-900 !default;
+$dropdown-dark-border-color: rgba($white, .15) !default;
+$dropdown-dark-divider-bg: $gray-800 !default;
+$dropdown-dark-box-shadow: 0 0.5rem 1rem rgba($white, .175) !default;
+$dropdown-dark-link-color: $gray-100 !default;
+$dropdown-dark-link-hover-color: lighten($gray-100, 5%) !default;
+$dropdown-dark-link-hover-bg: $gray-900 !default;
+$dropdown-dark-link-active-color: $component-active-color !default;
+$dropdown-dark-link-active-bg: $component-active-bg !default;
+$dropdown-dark-link-disabled-color: $gray-400 !default;
+$dropdown-dark-header-color: $gray-400 !default;
+
 ///* Custom CSS */
 body {
   background: $body-bg;
@@ -69,11 +84,58 @@ img {
   width: 100%;
 }
 
+// Navbar
+// navbar-brand
+.navbar-brand > img {
+  height: $navbar-brand-height;
+  width: auto;
+}
+
+// White links against a dark background
+.navbar-dark {
+  .dropdown-menu{
+    background-color: $dropdown-dark-bg;
+    color: $dropdown-dark-color;
+    border: $dropdown-border-width solid $dropdown-dark-border-color;
+
+    @include box-shadow($dropdown-box-shadow);
+
+    .dropdown-item{
+      color: $navbar-dark-color;
+      @include hover-focus {
+        color: $navbar-dark-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+      &.active,
+      &:active {
+          color: $dropdown-link-active-color;
+          text-decoration: none;
+
+          @include gradient-bg($dropdown-link-active-bg);
+      }
+
+      @include hover-focus {
+          color: $dropdown-dark-link-hover-color;
+          @include gradient-bg($dropdown-dark-link-hover-bg);
+      }
+
+    }
+
+    // Dividers (basically an `<hr>`) within the dropdown
+    .dropdown-divider {
+        @include nav-divider($dropdown-dark-divider-bg, $dropdown-divider-margin-y);
+    }
+  }
+}
+
 .nes-header {
   background-image: url("../../assets/img/header-3-bg.jpg");
   background-size: cover;
   //height: 75vh;
-  min-height: 75vh;
+  min-height: 50vh;
   padding-bottom: 3rem;
   padding-top: 3rem;
 
@@ -87,7 +149,7 @@ img {
 }
 
 .nes-section {
-  padding-bottom: $section-padding  ;
+  padding-bottom: $section-padding;
   padding-top: $section-padding;
 
   &.section-alt {
@@ -99,6 +161,11 @@ img {
 .section-title {
   @extend .pb-3;
   text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  @extend .pb-1;
 }
 
 .service-container {
@@ -136,16 +203,14 @@ img {
   }
 }
 
-.news-summary{
-  img.bd-placeholder-img{
+.news-summary {
+  img.bd-placeholder-img {
     max-width: 200px;
     @extend .my-auto;
   }
 }
 
 footer.footer {}
-
-
 // Blog/News
 .card-img-right {
   height: 100%;
@@ -157,11 +222,14 @@ footer.footer {}
   flex: 0 0 auto;
 }
 
-.h-250 { height: 250px; }
-@media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
+.h-250 {
+  height: 250px;
 }
-
+@media (min-width: 768px) {
+  .h-md-250 {
+    height: 250px;
+  }
+}
 /*
  * Blog name and description
  */
@@ -170,35 +238,36 @@ footer.footer {}
   font-size: 2rem;
   font-weight: 400;
 }
+
 .blog-description {
   font-size: 1.1rem;
   color: #999;
 }
-
 @media (min-width: 40em) {
   .blog-title {
     font-size: 3.5rem;
   }
 }
-
 /* Pagination */
 .blog-pagination {
   margin-bottom: 4rem;
 }
+
 .blog-pagination > .btn {
   border-radius: 2rem;
 }
-
 /*
  * Blog posts
  */
 .blog-post {
   margin-bottom: 4rem;
 }
+
 .blog-post-title {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   font-size: 2.5rem;
 }
+
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #999;
