@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" data-pgc-master="master.html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Nickan Exploration Services official homepage">
+    <meta name="author" content="NES group">
+    <title data-pgc-field="page.title">NES Homepage</title>
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/"> -->
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css">
+    <section data-pgc-field="more.styles">
+</section>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/nes-logo.png" class="brand-img"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nesNavbar" aria-controls="nesNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nesNavbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" data-pgc-field="menu-home">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-mission">
+            <a class="nav-link" href="mission.html">Mission</a>
+          </li>
+          <li class="nav-item dropdown" data-pgc-field="menu-services">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services </a>
+            <div class="dropdown-menu" aria-labelledby="serviesDropdown">
+              <a class="dropdown-item" href="services.html">Drilling and Sampling</a>
+              <a class="dropdown-item" href="services-mapping.html">Subsurface Mapping</a>
+            </div>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-knowledge">
+            <a class="nav-link" href="knowledge.html">Knowledge</a>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-careers">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-equipments">
+            <a class="nav-link" href="equipments.html">Equipments</a>
+          </li>
+          <li class="nav-item" data-pgc-field="menu-blog">
+            <a class="nav-link" href="blog.html">News</a>
+          </li>
+          <li class="nav-item active" data-pgc-field="menu-about">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown pull-right" data-pgc-field="menu-pages">
+            <a class="nav-link dropdown-toggle" href="#" id="otherDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pages </a>
+            <div class="dropdown-menu" aria-labelledby="otherDropdown">
+              <a class="dropdown-item" href="index2.html">Home 2</a>
+              <a class="dropdown-item" href="blog2.html">Blog 2</a>
+              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+              <a class="dropdown-item" href="news-single.html">News Post</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-content" data-pgc-field="main.content">
+      <section class="nes-section">
+        <div class="container">
+          <h2 class="section-title">Quote</h2>
+          <form role="from" id="quote-form" action="/application/quote" method="post" novalidate="novalidate">
+            <div class="form-check form-check-inline">
+              <input name="quote.subsurfaceExploration" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="SubsurfaceExploration">
+              <label class="form-check-label" for="inlineCheckbox1">Subsurface Exploration</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="SubsurfaceUtilityLocating">
+              <label class="form-check-label" for="inlineCheckbox2">Subsurface Utility Locating</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="AerialImaging">
+              <label class="form-check-label" for="inlineCheckbox3">Aerial Imaging</label>
+            </div>
+            <fieldset class="form-group">
+              <label for="nameInput">Your Name</label>
+              <input type="text" name="quote.name" class="form-control" id="nameInput" placeholder="Enter your name" data-rule-required="true" data-rule-minlength="3">
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="emailInput">Email address</label>
+              <input type="email" name="quote.email" class="form-control" id="emailInput" placeholder="Enter email" data-rule-required="true">
+              <div>
+                <small class="text-muted">We'll never share your email with anyone else.</small>
+              </div>
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="messageTextarea">Message</label>
+              <textarea name="quote.message" class="form-control" id="messageTextarea" rows="3" required="" minlength="5"></textarea>
+            </fieldset>
+            <div class="text-center">
+              <button type="submit" class="btn btn-dark align-center">Contact</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="footer bg-dark py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md">
+            <div class="widget">
+              <h5 class="text-light">Browse pages</h5>
+              <ul class="text-small list-unstyled">
+                <li>
+                  <a href="about.html" class="text-muted">Our company</a>
+                </li>
+                <li>
+                  <a href="mission.html" class="text-muted">Our mission</a>
+                </li>
+                <li>
+                  <a href="services.html" class="text-muted">Our services</a>
+                </li>
+                <li>
+                  <a href="knowledge.html" class="text-muted">Knowledge</a>
+                </li>
+                <li>
+                  <a href="blog.html" class="text-muted">News</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md">
+            <div class="widget">
+              <h5 class="text-light">Get in touch</h5>
+              <address class="text-white-50"> <strong>Nickan Exploration Services</strong><br>
+							1234 Sunshine Street<br>
+							Midland Texas 77027, USA </address>
+              <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nickanexp.com </p>
+            </div>
+          </div>
+          <div class="col-6 col-md">
+            <div class="widget">
+              <h5 class="text-light">Subscribe newsletter</h5>
+              <p class="text-white-50">
+                Keep updated for new services and changes. Enter your e-mail and subscribe to our newsletter. </p>
+              <form class="subscribe">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Email" aria-describedby="subscribe-button">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="submit" id="subscribe-button">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="border-brand">
+      <div class="container text-center">
+        <span class="text-white">&copy;2019 All rights reserved. Nickan Exploration Services&reg;</span>
+      </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+    <section data-pgc-field="more.scripts">
+</section>
+  </body>
+</html>

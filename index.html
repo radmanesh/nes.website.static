@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Nikan Exploration Services official homepage">
+    <meta name="description" content="Nickan Exploration Services official homepage">
     <meta name="author" content="NES group">
     <title data-pgc-field="page.title">NES Homepage</title>
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/"> -->
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css">
+    <section data-pgc-field="more.styles">
+</section>
   </head>
   <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
       <a class="navbar-brand" href="index.html"><img src="assets/img/nes-logo.png" class="brand-img"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nesNavbar" aria-controls="nesNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,7 +25,7 @@
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item" data-pgc-field="menu-mission">
-            <a class="nav-link" href="mission.html">Our Mission</a>
+            <a class="nav-link" href="mission.html">Mission</a>
           </li>
           <li class="nav-item dropdown" data-pgc-field="menu-services">
             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -32,9 +34,6 @@
               <a class="dropdown-item" href="services.html">Drilling and Sampling</a>
               <a class="dropdown-item" href="services-mapping.html">Subsurface Mapping</a>
             </div>
-          </li>
-          <li class="nav-item" data-pgc-field="menu-markets">
-            <a class="nav-link" href="markets.html">Markets</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-knowledge">
             <a class="nav-link" href="knowledge.html">Knowledge</a>
@@ -67,110 +66,140 @@
     <div class="main-content" data-pgc-field="main.content">
       <div class="nes-header">
         <div class="container ">
-          <div class="header-container  ">
-            <h1 class="header-title">Nikan Exploration Services</h1>
-            <p class="header-description">
-  That is our destiny and we in NES trying to bring the utmost quality in our work to assure the society that they are receiving the highest level of service that they deserve. </p>
-            <a href="about.html" class="btn btn-info">learn more</a>
+          <div class="header-container row  justify-content-center">
+            <div class="header-content col-lg-10">
+              <h1 class="header-title text-brand">Nickan Exploration Services</h1>
+              <p class="header-description lead">
+                That is our destiny and we in NES trying to bring the utmost quality in our work to assure the society that they are receiving the highest level of service that they deserve. </p>
+              <a href="about.html" class="btn btn-brand">learn more</a>
+            </div>
           </div>
         </div>
       </div>
-      <section class="nes-section about-section section-alt">
-        <div class="container">
-          <h1 class="section-title">About Us</h1>
-          <div class="about-description text-center">
-            <p class="">
-We are providing exploration services, please see our Services page to have a better understanding that in which areas we can help you. </p>
-            <p class="small">
-              We in NES are trying to bring the utmost quality in our work to assure the society that they are receiving the highest level of service that they deserve. </p>
-          </div>
-        </div>
-      </section>
       <section class="nes-section services-section">
         <div class="container">
-          <h1 class="section-title">Services</h1>
+          <h1 class="section-title text-brand">Services</h1>
           <div class="row home-service-container">
-            <div class="col-md pr-2 justify-content-center">
+            <div class="col-md pr-md-2 justify-content-center">
               <img class="img-fluid rounded mh-100" src="assets/img/service2.jpg">
             </div>
-            <div class="col-md m-2">
+            <div class="col-md mx-md-2">
               <h3 class="service-title mb-3">Geotechnical Drilling and Sampling</h3>
               <div class="home-services-list">
                 <div>
-                  <i class="fas fa-truck-monster fa-fw mr-1 text-info"></i> Boring Layout
+                  <i class="fas fa-circle fa-fw mr-1 text-brand"></i> Boring Layout
                 </div>
                 <div>
-                  <i class="fas fa-tachometer-alt fa-fw mr-1 text-primary"></i> Boring Elevations and Sampling Depths
+                  <i class="fas fa-circle fa-fw mr-1 text-brand"></i> Boring Elevations and Sampling Depths
                 </div>
                 <div>
-                  <i class="fas fa-map fa-fw mr-1 text-black-50"></i> Subsurface Exploration Procedures
-                </div>
-                <div>
-                  <i class="fas fa-mountain fa-fw mr-1 text-body"></i> Property Disturbance
+                  <i class="fas fa-circle fa-fw mr-1 text-brand"></i> Subsurface Exploration Procedures
                 </div>
               </div>
               <div class="text-center">
-                <a class="btn btn-dark" href="#">Learn More</a>
+                <a class="btn btn-brand" href="services.html">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="row home-service-container home-service-with-description">
-            <div class="col-md pl-2 order-last justify-content-center">
+          <hr class="border-brand">
+          <div class="row home-service-container">
+            <div class="col-md pl-md-2 order-md-last justify-content-center">
               <img class="img-fluid rounded mh-100" src="assets/img/service3.png">
             </div>
-            <div class="col-md m-2 order-first ">
+            <div class="col-md mx-2 order-md-first ">
+              <h3 class="service-title mb-3">Subsurface Mapping</h3>
+              <p class="text-justify service-description">The non-invasive subsurface mapping is performed by utilizing the most recent applications of geophysics to draw a 2D or 3D images of what is underlying an innocent surface.</p>
+              <div class="sub-service">
+                <h4 class="sub-service-title text-muted">Subsurface Utility Locating</h4>
+                <p class="text-justify service-description">In NES we provide SUM services which will help developers, excavators, drillers, engineers and other team members to have a better understanding of what they should expect to see at their sites.</p>
+                <ul class="fa-ul text-left service-features-list">
+                  <li>
+                    <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>SUM-Basic Report
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>SUM-PRO Report
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>SUM-ULT Report
+                  </li>
+                </ul>
+              </div>
+              <div class="sub-service">
+                <h4 class="sub-service-title text-muted">Aerial Imaging</h4>
+                <p class="text-justify service-description">NES provides aerial imaging services by utilizing drone technology to record high-resolution videos and capture high-quality pictures.</p>
+              </div>
+              <div class="text-center">
+                <a class="btn btn-brand" href="services-mapping.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <hr class="border-brand">
+          <div class="row home-service-container home-service-with-description">
+            <div class="col-md pl-md-2 order-md-last justify-content-center">
+              <img class="img-fluid rounded mh-100" src="assets/img/service3.png">
+            </div>
+            <div class="col-md mx-2 order-md-first ">
               <div class="home-service-details">
-                <h3 class="service-title mb-1">Non-Invasive Subsurface Mapping</h3>
-                <p class="text-justify service-description mb-2">Non-invasive subsurface mapping is utilizing the most recent applications of geophysics to draw a 2D or 3D images of what is underlying an innocent surface.</p>
+                <h3 class="service-title mb-3">Subsurface Mapping</h3>
+                <p class="text-justify service-description mb-2">The non-invasive subsurface mapping is performed by utilizing the most recent applications of geophysics to draw a 2D or 3D images of what is underlying an innocent surface.</p>
                 <div class="sub-service">
-                  <h4 class="sub-service-title "><span class="badge badge-info">Report Type SUM-Basic</span></h4>
+                  <h4 class="sub-service-title "><span class="badge badge-brand">Report Type SUM-Basic</span></h4>
                   <ul class="fa-ul text-left service-features-list">
                     <li>
-                      <span class="fa-li"><i class="fas fa-check text-success"></i></span>The information regarding the scope of work and utilized methods.
+                      <span class="fa-li"><i class="fas fa-check text-brand"></i></span>The information regarding the scope of work and utilized methods.
                     </li>
                     <li>
-                      <span class="fa-li"><i class="fas fa-check text-success"></i></span>Pictures of the marked locations at the site.
+                      <span class="fa-li"><i class="fas fa-check text-brand"></i></span>Pictures of the marked locations at the site.
                     </li>
                   </ul>
                 </div>
                 <div class="sub-service">
-                  <h4 class="sub-service-title"><span class="badge badge-primary">Report Type SUM-PRO</span></h4>
+                  <h4 class="sub-service-title"><span class="badge badge-brand">Report Type SUM-PRO</span></h4>
                   <ul class="fa-ul text-left service-features-list">
                     <li class="text-muted">
-                      <span class="fa-li"><i class="fas fa-check text-info"></i></span>Includes all features of SUM-Basic.
+                      <span class="fa-li"><i class="fas fa-plus text-secondary"></i></span>Includes all features of SUM-Basic.
                     </li>
                     <li>
-                      <span class="fa-li"><i class="fas fa-check text-success"></i></span>Plan of the site and underground utilities.
+                      <span class="fa-li"><i class="fas fa-check text-brand"></i></span>Plan of the site and underground utilities.
                     </li>
                   </ul>
                 </div>
                 <div class="sub-service">
-                  <h4 class="sub-service-title"><span class="badge badge-success">Report Type SUM-ULT</span></h4>
+                  <h4 class="sub-service-title"><span class="badge badge-brand">Report Type SUM-ULT</span></h4>
                   <ul class="fa-ul text-left service-features-list">
                     <li class="text-muted">
-                      <span class="fa-li"><i class="fas fa-check text-info"></i></span>Includes all features of SUM-PRO.
+                      <span class="fa-li"><i class="fas fa-plus text-secondary"></i></span>Includes all features of SUM-PRO.
                     </li>
                     <li>
-                      <span class="fa-li"><i class="fas fa-check text-success"></i></span>3D model of the utilities over a Google Earth file.
+                      <span class="fa-li"><i class="fas fa-check text-brand"></i></span>3D model of the utilities over a Google Earth file.
                     </li>
                     <li>
-                      <span class="fa-li"><i class="fas fa-check text-success"></i></span>Eyebird view of the marked existing utility locations at site by utilizing drone technology.
+                      <span class="fa-li"><i class="fas fa-check text-brand"></i></span>Eyebird view of the marked existing utility locations at site by utilizing drone technology.
                     </li>
                   </ul>
                 </div>
                 <div class="text-center">
-                  <a class="btn btn-dark" href="#">Learn More</a>
+                  <a class="btn btn-brand" href="#">Learn More</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="nes-section news-section bg-light">
+      <section class="nes-section about-section section-alt">
         <div class="container">
-          <h1 class="section-title">Latest News</h1>
+          <h1 class="section-title text-brand">About Us</h1>
+          <div class="about-description text-center">
+            <p class="">
+We are providing exploration services, please see our Services page to have a better understanding that in which areas we can help you. </p>
+          </div>
+        </div>
+      </section>
+      <section class="nes-section articles-section">
+        <div class="container">
+          <h1 class="section-title text-brand">Latest Articles</h1>
           <div class="row mb-2 news-container">
-            <div class="col-md-6 news-summary">
+            <div class="col-md news-summary">
               <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
                   <strong class="d-inline-block mb-2 text-primary">World</strong>
@@ -179,12 +208,51 @@ We are providing exploration services, please see our Services page to have a be
                   <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                   <a href="#" class="stretched-link text-muted">Continue reading</a>
                 </div>
+              </div>
+            </div>
+            <div class="col-md news-summary">
+              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-success">Design</strong>
+                  <h3 class="mb-0">Post title</h3>
+                  <div class="mb-1 text-muted">Nov 11</div>
+                  <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="stretched-link text-muted">Continue reading</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md news-summary">
+              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary">World</strong>
+                  <h3 class="mb-0">Featured post</h3>
+                  <div class="mb-1 text-muted">Nov 12</div>
+                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="stretched-link text-muted">Continue reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="action-container text-center">
+            <a class="btn btn-brand" href="#">Explore more</a>
+          </div>
+        </div>
+      </section>
+      <section class="nes-section news-section section-alt">
+        <div class="container">
+          <h1 class="section-title text-brand">Latest News</h1>
+          <div class="row mb-2 news-container">
+            <div class="col-md-6 news-summary">
+              <div class="row no-gutters border bg-white rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary">World</strong>
+                  <h3 class="mb-0">Featured post</h3>
+                  <div class="mb-1 text-muted">Nov 12</div>
+                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="stretched-link text-muted">Continue reading</a>
+                </div>
                 <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect>
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                  </svg>
+                  <img class="bd-placeholder-img" src="assets/img/truck-rig.png">
                 </div>
               </div>
             </div>
@@ -204,27 +272,42 @@ We are providing exploration services, please see our Services page to have a be
             </div>
           </div>
           <div class="action-container text-center">
-            <a class="btn text-center btn-outline-dark" href="#">Explore more</a>
+            <a class="btn btn-brand" href="#">Explore more</a>
           </div>
         </div>
       </section>
-      <section class="nes-section contact-section ">
+      <section class="nes-section contact-section">
         <div class="container">
-          <h1 class="section-title">Contact Us</h1>
+          <h1 class="section-title text-brand">Contact Us</h1>
           <div class="row">
             <!-- Map Column -->
-            <div class="col-lg-8 mb-4">
+            <div class="col-lg-7 mb-4">
               <!-- Embedded Google Map -->
               <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
             </div>
             <!-- Contact Details Column -->
-            <div class="col-lg-4 mb-4">
-              <h3>Contact Details</h3>
-              <p>
-                3481 Melrose Place <br>Beverly Hills, CA 90210 <br> </p>
-              <p> <abbr title="Phone">P</abbr>: (123) 456-7890 </p>
-              <p> <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com </a> </p>
-              <p> <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM </p>
+            <div class="col-lg-5 mb-4 home-contact-info">
+              <h3 class="mb-3">Contact Details</h3>
+              <ul class="fa-ul ">
+                <li>
+                  <i class="fas fa-map-marker-alt fa-lg fa-li fa-fw text-brand"></i>
+                  <span><address class="text-dark d-inline">1234 Sunshine Street, Midland Texas 77027, USA </address></span>
+                </li>
+                <li>
+                  <i class="fas fa-phone fa-li fa-fw fa-lg text-brand"></i>
+                  <span>(+1) (432) 232-8476</span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope-open-text fa-fw fa-li fa-lg text-brand"></i>
+                  <span><a class="text-reset" href="mailto:arad@nickanexp.com">Arad@Nickanexp.com</a></span>
+                </li>
+              </ul>
+              <div class="contact-socail transition text-center">
+                <a href="" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-facebook fa-stack-1x fa-inverse"></i> </span> </a>
+                <a href="" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                <a href="" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-pinterest fa-stack-1x fa-inverse"></i></span></a>
+                <a href="" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+              </div>
             </div>
           </div>
         </div>
@@ -258,10 +341,10 @@ We are providing exploration services, please see our Services page to have a be
           <div class="col-6 col-md">
             <div class="widget">
               <h5 class="text-light">Get in touch</h5>
-              <address class="text-white-50"> <strong>Nikan Exploration Services</strong><br>
+              <address class="text-white-50"> <strong>Nickan Exploration Services</strong><br>
 							1234 Sunshine Street<br>
 							Midland Texas 77027, USA </address>
-              <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nikanexp.com </p>
+              <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nickanexp.com </p>
             </div>
           </div>
           <div class="col-6 col-md">
@@ -281,16 +364,16 @@ We are providing exploration services, please see our Services page to have a be
           </div>
         </div>
       </div>
-      <hr class="border-secondary">
+      <hr class="border-brand">
       <div class="container text-center">
-        <span class="text-white">&copy;2019 All rights reserved. Nikan Exploration Services&reg;</span>
+        <span class="text-white">&copy;2019 All rights reserved. Nickan Exploration Services&reg;</span>
       </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+    <section data-pgc-field="more.scripts">
+</section>
   </body>
 </html>
-<!--[Pinegrow components saved data - this data is no longer used in the component. We're saving it just in case. Clear this with Components -> Clear saved unused edits]<li class="nav-item" data-pgc-field="menu-portfolio">
-    <a class="nav-link" href="portfolio.html">Portfolio</a>
-</li>-->

@@ -8,7 +8,7 @@
   "scripts": {
     "start": "npm run init && npm run sass",
     "init": "copyfiles -a -u 3 node_modules/bootstrap/scss/* node_modules/bootstrap/scss/**/* bootstrap_theme/bootstrap && copyfiles -f node_modules/jquery/dist/jquery.min.js assets/js && copyfiles -u 3 node_modules/bootstrap/dist/**/* bootstrap",
-    "sass": "node-sass --output-style compressed bootstrap_theme/custom.scss assets/css/theme.css",
+    "sass": "node-sass bootstrap_theme/custom.scss assets/css/theme.css && node-sass --output-style compressed bootstrap_theme/custom.scss assets/css/theme.min.css",
     "watch": "npm run sass -- -w"
   },
   "author": "Arman Radmanesh",
@@ -16,9 +16,10 @@
   "dependencies": {
     "autoprefixer": "^8.6.5",
     "bootstrap": "^4.3",
-    "copyfiles": "^2.1.0",
+    "copyfiles": "^2.1.1",
     "cross-env": "^5.2.0",
     "jquery": "^3.4.0",
+    "jquery-validation": "^1.19.1",
     "node-sass": "^4.9.2",
     "npm-run-all": "^4.1.5",
     "popper.js": "^1.15.0",

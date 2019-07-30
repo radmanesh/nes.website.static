@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Nikan Exploration Services official homepage">
+    <meta name="description" content="Nickan Exploration Services official homepage">
     <meta name="author" content="NES group">
     <title data-pgc-field="page.title">NES Homepage</title>
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/"> -->
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css">
+    <section data-pgc-field="more.styles">
+</section>
   </head>
   <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
       <a class="navbar-brand" href="index.html"><img src="assets/img/nes-logo.png" class="brand-img"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nesNavbar" aria-controls="nesNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,7 +25,7 @@
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item" data-pgc-field="menu-mission">
-            <a class="nav-link" href="mission.html">Our Mission</a>
+            <a class="nav-link" href="mission.html">Mission</a>
           </li>
           <li class="nav-item dropdown active" data-pgc-field="menu-services">
             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -32,9 +34,6 @@
               <a class="dropdown-item" href="services.html">Drilling and Sampling</a>
               <a class="dropdown-item" href="services-mapping.html">Subsurface Mapping</a>
             </div>
-          </li>
-          <li class="nav-item" data-pgc-field="menu-markets">
-            <a class="nav-link" href="markets.html">Markets</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-knowledge">
             <a class="nav-link" href="knowledge.html">Knowledge</a>
@@ -65,57 +64,66 @@
       </div>
     </nav>
     <div class="main-content" data-pgc-field="main.content">
-      <section class="nes-section services-detail">
+      <section class="services-section">
         <div class="container">
-          <h1 class="section-title mb-0">Non-Invasive Subsurface Mapping</h1>
-          <img src="assets/img/service2.jpg" class="img-fluid mb-2" alt="Responsive image">
-          <p>
-            Non-invasive subsurface mapping is utilizing the most recent applications of geophysics to draw a 2D or 3D images of what is underlying an innocent surface. We utilize GPR (ground penetration Radar) tools to summit and receive the response of electromagnetic waves to the subsurface. Any changes or inconsistency within decay depths of waves will be mirrored back and received by the receiver at ground which will help us to map the subsurface features which could be either manmade or natural such as archeological site, compacted fills, underground cavities and karst formations, underground utilities, underground storage tanks, etc. </p>
-          <p>
-            An application of non-invasive subsurface mapping is Subsurface Utility Mapping (SUM) which is part of Subsurface Utility Engineering (SUE). The utility mapping will help developers, excavators, drillers, engineers and other team members to have a better understanding what they should expect to see at their sites. For the purpose of utility mapping, we review publicly available data and maps and the One-Call ticket information and review the site features and anything that can give us a clue that how and where the utilities run across a site. Then with utilizing GPR and Metal Detector equipment we sweep the areas of the site requested by the client and mark the location of the underlying utilities detected in our field program. </p>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Capability</th>
-                  <th class="table-primary">Report Type SUM-Basic</th>
-                  <th class="table-primary">Report Type SUM-PRO</th>
-                  <th class="table-primary">Report Type SUM-ULT</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>The information regarding the scope of work and utilized methods</td>
-                  <td><span class="fas fa-check text-success"></span></td>
-                  <td><span class="fas fa-check text-success"></span></td>
-                  <td><span class="fas fa-check text-success"></span></td>
-                </tr>
-                <tr>
-                  <td>Pictures of the marked locations at the site</td>
-                  <td><span class="fas fa-check text-success"></span></td>
-                  <td><span class="fas fa-check text-success"></span></td>
-                  <td><span class="fas fa-check text-success"></span></td>
-                </tr>
-                <tr>
-                  <td>Plan of the site and underground utilities</td>
-                  <td><span class="fas fa-times text-danger"></span></td>
-                  <td><span class="fas fa-check text-success"></span></td>
-                  <td><span class="fas fa-check text-success"></span></td>
-                </tr>
-                <tr>
-                  <td>3D model of the utilities over a Google Earth file</td>
-                  <td><span class="fas fa-times text-danger"></span></td>
-                  <td><span class="fas fa-times text-danger"></span></td>
-                  <td><span class="fas fa-check text-success"></span></td>
-                </tr>
-                <tr>
-                  <td>Eyebird view of the marked existing utility locations at site by utilizing drone technology</td>
-                  <td><span class="fas fa-times text-danger"></span></td>
-                  <td><span class="fas fa-times text-danger"></span></td>
-                  <td><span class="fas fa-check text-success"></span></td>
-                </tr>
-              </tbody>
-            </table>
+          <h1 class="section-title text-brand pt-3">Subsurface Mapping<small> (by GPR + Metal Detector)</small></h1>
+          <img src="assets/img/service2.jpg" class="img-fluid rounded" alt="Responsive image">
+          <p class="text-justify pt-3">
+The non-invasive subsurface mapping is performed by utilizing the most recent applications of geophysics to draw a 2D or 3D images of what is underlying an innocent surface. We utilize GPR (Ground Penetration Radar) tools to prospect and receive the response of electromagnetic waves from the subsurface. Any changes or inconsistency within decay depths of waves will be mirrored back and received by the receiver at the ground surface. These received responses will help us to map the subsurface features which could be either manmade or natural. The subsurface features can be as different as sedimental soil layers, archeological elements, compacted fills, underground cavities and karst formations, underground utilities, underground storage tanks, etc.</p>
+          <div class="sub-service-container">
+            <h3 class="text-muted">Subsurface Utility Locating/Mapping</h3>
+            <p class="text-justify">
+              An application of non-invasive subsurface mapping is Subsurface Utility Mapping (SUM) which is part of Subsurface Utility Engineering (SUE) scope of work. In NES we provide SUM services which will help developers, excavators, drillers, engineers and other team members to have a better understanding of what they should expect to see at their sites. For the purpose of utility mapping, we review publicly available data, the One-Call ticket information and review the site
+              features and anything that can give us a clue that how and where the utilities run across the site. Then with utilizing GPR and Metal Detector equipment we sweep the areas of the site as requested by the client and mark the location of the underlying utilities detected in our field program in real time. We present our results in three fashions presented below:</p>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Capability</th>
+                    <th class="table-brand">Report Type SUM-Basic</th>
+                    <th class="table-brand">Report Type SUM-PRO</th>
+                    <th class="table-brand">Report Type SUM-ULT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>The information regarding the scope of work and utilized methods</td>
+                    <td><span class="fas fa-check text-brand"></span></td>
+                    <td><span class="fas fa-check text-brand"></span></td>
+                    <td><span class="fas fa-check text-brand"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Pictures of the marked locations at the site</td>
+                    <td><span class="fas fa-check text-brand"></span></td>
+                    <td><span class="fas fa-check text-brand"></span></td>
+                    <td><span class="fas fa-check text-brand"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Plan of the site and underground utilities</td>
+                    <td><span class="fas fa-times text-muted"></span></td>
+                    <td><span class="fas fa-check text-brand"></span></td>
+                    <td><span class="fas fa-check text-brand"></span></td>
+                  </tr>
+                  <tr>
+                    <td>3D model of the utilities over a Google Earth file</td>
+                    <td><span class="fas fa-times text-muted"></span></td>
+                    <td><span class="fas fa-times text-muted"></span></td>
+                    <td><span class="fas fa-check text-brand"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Eyebird view of the marked existing utility locations at site by utilizing drone technology</td>
+                    <td><span class="fas fa-times text-muted"></span></td>
+                    <td><span class="fas fa-times text-muted"></span></td>
+                    <td><span class="fas fa-check text-brand"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="sub-service-container">
+              <h3 class="text-muted">Aerial Imaging</h3>
+              <p class="text-justify">
+                NES provides aerial imaging services by utilizing drone technology to record high-resolution videos and capture high-quality pictures. Our recorded materials can document the actual site conditions, utilized construction methods, project process and to demonstrate the final construction product. We can provide the client either the raw recorded materials or edited video for the purpose of the presentation. We understand especially in remote areas or large sites visiting the entire site by the design team may not be possible and this service apart from documenting the condition of the site will serve as the eyes of engineers to accustom their design to the actual conditions at their sites.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -148,10 +156,10 @@
           <div class="col-6 col-md">
             <div class="widget">
               <h5 class="text-light">Get in touch</h5>
-              <address class="text-white-50"> <strong>Nikan Exploration Services</strong><br>
+              <address class="text-white-50"> <strong>Nickan Exploration Services</strong><br>
 							1234 Sunshine Street<br>
 							Midland Texas 77027, USA </address>
-              <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nikanexp.com </p>
+              <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nickanexp.com </p>
             </div>
           </div>
           <div class="col-6 col-md">
@@ -171,16 +179,16 @@
           </div>
         </div>
       </div>
-      <hr class="border-secondary">
+      <hr class="border-brand">
       <div class="container text-center">
-        <span class="text-white">&copy;2019 All rights reserved. Nikan Exploration Services&reg;</span>
+        <span class="text-white">&copy;2019 All rights reserved. Nickan Exploration Services&reg;</span>
       </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+    <section data-pgc-field="more.scripts">
+</section>
   </body>
 </html>
-<!--[Pinegrow components saved data - this data is no longer used in the component. We're saving it just in case. Clear this with Components -> Clear saved unused edits]<li class="nav-item" data-pgc-field="menu-portfolio">
-    <a class="nav-link" href="portfolio.html">Portfolio</a>
-</li>-->
