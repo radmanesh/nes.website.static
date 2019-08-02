@@ -6,6 +6,11 @@
     <meta name="description" content="Nickan Exploration Services official homepage">
     <meta name="author" content="NES group">
     <title data-pgc-edit="page.title">NES</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/"> -->
     <!-- Bootstrap core CSS -->
     <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css">
@@ -29,23 +34,26 @@
           </li>
           <li class="nav-item dropdown" data-pgc-edit="menu-services[no_content]" data-pgc-edit-classes="active">
             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services </a>
+              Services</a>
             <div class="dropdown-menu" aria-labelledby="serviesDropdown">
-              <a class="dropdown-item" href="services.html">Drilling and Sampling</a>
               <a class="dropdown-item" href="services-mapping.html">Subsurface Mapping</a>
+              <a class="dropdown-item" href="services-aerial.html">Aerial Imaging</a>
+              <a class="dropdown-item" href="services-drilling.html">Drilling and Sampling</a>
             </div>
           </li>
-          <li class="nav-item" data-pgc-edit="menu-knowledge[no_content]" data-pgc-edit-classes="active">
-            <a class="nav-link" href="knowledge.html">Knowledge</a>
-          </li>
-          <li class="nav-item" data-pgc-edit="menu-careers[no_content]" data-pgc-edit-classes="active">
-            <a class="nav-link" href="careers.html">Careers</a>
+          <li class="nav-item dropdown" data-pgc-edit="menu-careers[no_content]" data-pgc-edit-classes="active">
+            <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Careers</a>
+            <div class="dropdown-menu" aria-labelledby="careersDropdown">
+              <a class="dropdown-item" href="careers-drone.html">Drone Operator</a>
+              <a class="dropdown-item" href="careers-locator.html">Utility Locator</a>
+            </div>
           </li>
           <li class="nav-item" data-pgc-edit="menu-equipments[no_content]" data-pgc-edit-classes="active">
             <a class="nav-link" href="equipments.html">Equipments</a>
           </li>
           <li class="nav-item" data-pgc-edit="menu-blog[no_content]" data-pgc-edit-classes="active">
-            <a class="nav-link" href="blog.html">News</a>
+            <a class="nav-link" href="blog.html">News and Articles</a>
           </li>
           <li class="nav-item" data-pgc-edit="menu-about[no_content]" data-pgc-edit-classes="active">
             <a class="nav-link" href="about.html">About</a>
@@ -66,6 +74,7 @@
     <div class="main-content" data-pgc-edit="main.content">
       <h1 data-pgc-optional="main_content_header">Main Content</h1>
     </div>
+    <!-- ./main-content -->
     <footer class="footer bg-dark py-3">
       <div class="container">
         <div class="row">
@@ -83,9 +92,6 @@
                   <a href="services.html" class="text-muted">Our services</a>
                 </li>
                 <li>
-                  <a href="knowledge.html" class="text-muted">Knowledge</a>
-                </li>
-                <li>
                   <a href="blog.html" class="text-muted">News</a>
                 </li>
               </ul>
@@ -94,9 +100,7 @@
           <div class="col-6 col-md">
             <div class="widget">
               <h5 class="text-light">Get in touch</h5>
-              <address class="text-white-50"> <strong>Nickan Exploration Services</strong><br>
-							1234 Sunshine Street<br>
-							Midland Texas 77027, USA </address>
+              <p class="text-white-50 strong">Nickan Exploration Services</p>
               <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nickanexp.com </p>
             </div>
           </div>
@@ -109,7 +113,7 @@
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Email" aria-describedby="subscribe-button">
                   <div class="input-group-append">
-                    <button class="btn btn-secondary" type="submit" id="subscribe-button">Subscribe</button>
+                    <button class="btn btn-brand" type="submit" id="subscribe-button">Subscribe</button>
                   </div>
                 </div>
               </form>

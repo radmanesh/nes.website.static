@@ -7150,7 +7150,7 @@ img {
   width: 100%; }
 
 .navbar-brand > img {
-  height: 3.1875rem;
+  height: 4.875rem;
   width: auto; }
 
 .navbar-dark .dropdown-menu {
@@ -7177,7 +7177,6 @@ img {
     border-top: 1px solid #343a40; }
 
 .nes-header {
-  background-image: url("../img/header-3-bg.jpg");
   background-size: cover;
   min-height: 50vh;
   padding-bottom: 3rem;
@@ -7277,7 +7276,7 @@ img {
 
 .blog-post-title {
   font-size: 2.5rem;
-  margin-bottom: .25rem; }
+  margin-bottom: 0.25rem; }
 
 .blog-post-meta {
   color: #999;
@@ -7286,14 +7285,14 @@ img {
 .home-contact-info > ul li {
   padding-bottom: 1rem; }
 
-.contact-socail a:hover,
-.contact-socail a.hover {
+.contact-socail a.hover,
+.contact-socail a:hover {
   text-decoration: none; }
-  .contact-socail a:hover .fa-circle,
-  .contact-socail a.hover .fa-circle {
+  .contact-socail a.hover .fa-circle,
+  .contact-socail a:hover .fa-circle {
     color: #6c757d; }
-  .contact-socail a:hover .fa-inverse,
-  .contact-socail a.hover .fa-inverse {
+  .contact-socail a.hover .fa-inverse,
+  .contact-socail a:hover .fa-inverse {
     color: #000; }
 
 .contact-socail .fa-circle {

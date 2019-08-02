@@ -18,6 +18,7 @@
     "bootstrap": "^4.3",
     "copyfiles": "^2.1.1",
     "cross-env": "^5.2.0",
+    "inputmask": "^4.0.8",
     "jquery": "^3.4.0",
     "jquery-validation": "^1.19.1",
     "node-sass": "^4.9.2",

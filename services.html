@@ -6,6 +6,11 @@
     <meta name="description" content="Nickan Exploration Services official homepage">
     <meta name="author" content="NES group">
     <title data-pgc-field="page.title">NES Homepage</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/"> -->
     <!-- Bootstrap core CSS -->
     <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css">
@@ -29,23 +34,26 @@
           </li>
           <li class="nav-item dropdown active" data-pgc-field="menu-services">
             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services </a>
+              Services</a>
             <div class="dropdown-menu" aria-labelledby="serviesDropdown">
-              <a class="dropdown-item" href="services.html">Drilling and Sampling</a>
               <a class="dropdown-item" href="services-mapping.html">Subsurface Mapping</a>
+              <a class="dropdown-item" href="services-aerial.html">Aerial Imaging</a>
+              <a class="dropdown-item" href="services-drilling.html">Drilling and Sampling</a>
             </div>
           </li>
-          <li class="nav-item" data-pgc-field="menu-knowledge">
-            <a class="nav-link" href="knowledge.html">Knowledge</a>
-          </li>
-          <li class="nav-item" data-pgc-field="menu-careers">
-            <a class="nav-link" href="careers.html">Careers</a>
+          <li class="nav-item dropdown" data-pgc-field="menu-careers">
+            <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Careers</a>
+            <div class="dropdown-menu" aria-labelledby="careersDropdown">
+              <a class="dropdown-item" href="careers-drone.html">Drone Operator</a>
+              <a class="dropdown-item" href="careers-locator.html">Utility Locator</a>
+            </div>
           </li>
           <li class="nav-item" data-pgc-field="menu-equipments">
             <a class="nav-link" href="equipments.html">Equipments</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-blog">
-            <a class="nav-link" href="blog.html">News</a>
+            <a class="nav-link" href="blog.html">News and Articles</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-about">
             <a class="nav-link" href="about.html">About</a>
@@ -64,72 +72,69 @@
       </div>
     </nav>
     <div class="main-content" data-pgc-field="main.content">
-      <section class="services-section">
+      <section class="services-section py-3">
         <div class="container">
-          <h1 class="section-title text-brand pt-3">Geotechnical Drilling and Sampling</h1>
-          <!-- Service container -->
-          <div class="row service-hor-container mb-3 pb-3">
-            <div class="col-md pr-2 justify-content-center">
-              <img class="img-fluid rounded mh-100" src="assets/img/service2.jpg" alt="...">
+          <h1 class="section-title text-brand">Services</h1>
+          <div class="row home-service-container">
+            <div class="col-md pr-md-2 justify-content-center">
+              <img class="img-fluid rounded mh-100" src="assets/img/SUL.jpg">
             </div>
-            <div class="col-md">
-              <h3 class="service-title mb-3">Boring Layout</h3>
-              <p class="text-justify">In most of our projects the location of borings is marked by our clients or other parties prior to conducting our work, but if requested, NES can locate and mark the boring locations by utilizing handheld GPS equipment such as GARMIN GPSMAP-series. Our GPS equipment has an an estimated horizontal accuracy of +/-25 feet which is mostly acceptable in our industry. If more accurate locating is required, please let us know in advance and we will provide you the alternate options.</p>
+            <div class="col-md mx-md-2">
+              <h3 class="service-title mb-3 mt-md-0 mt-2">Subsurface Mapping</h3>
+              <div class="sub-service">
+                <h4 class="sub-service-title text-muted">Subsurface Utility Locating/Mapping</h4>
+                <p class="text-justify service-description">NES provides SUL/SUM services which help developers, excavators, drillers, engineers and other team members to have a better understanding of what they should expect to see at their sites. <br>
+                  In addition to marking the underground utilities or detectable buried elements at site, we prepare our deliverables in three different format listed below: </p>
+                <ul class="fa-ul text-left service-features-list">
+                  <li>
+                    <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>SUM-Basic Report
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>SUM-PRO Report
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>SUM-ULT Report
+                  </li>
+                </ul>
+                <p class="text-justify">
+                  By utilizing Triple Bandwidth technology, we can also detect thickness of the pavement layers and demonestrate them in our drawings and reports. Ask our representative to learn more. </p>
+              </div>
+              <div class="text-center">
+                <a class="btn btn-brand" href="services-mapping.html">Learn More</a>
+              </div>
             </div>
           </div>
           <hr class="border-brand">
-          <!-- Service container -->
-          <div class="row service-hor-container service-alt mb-3 pb-3 pt-2">
-            <div class="col-md pl-2 justify-content-center order-last">
-              <img src="assets/img/service1.png" class="rounded" alt="...">
+          <div class="row home-service-container">
+            <div class="col-md pl-md-2 order-md-last justify-content-center">
+              <img class="img-fluid rounded mh-100" src="assets/img/AI.jpg">
             </div>
-            <div class="col-md order-first">
-              <h3 class="service-title mb-3">Boring Elevations and Sampling Depths</h3>
-              <p class="text-justify">The relative elevation at each boring location can be determined by utilizing a theodolite unit. Theodolite is a precision optical instrument for measuring angles between designated visible points in the horizontal and vertical planes and its usage, efficiency and even preciseness may be reduced by increasing the size of the site or distance between the borings. Then we require to have the exact boring location plan and a brief knowledge of the site features and topography to let you know if this option is practical.</p>
-              <p class="text-justify">As a minimum, the sampling depths will be measured from the existing ground surface at each boring at the time of our field activities and will be reported in our field logs.</p>
+            <div class="col-md mx-2 order-md-first ">
+              <h3 class="service-title mb-3 mt-md-0 mt-2">Aerial Imaging</h3>
+              <p class="text-justify service-description">NES provides aerial imaging services by utilizing drone technology to record high-resolution videos and capture high-quality pictures.</p>
+              <div class="text-center">
+                <a class="btn btn-brand" href="services-aerial.html">Learn More</a>
+              </div>
             </div>
           </div>
           <hr class="border-brand">
-          <!-- Service container -->
-          <div class="row service-hor-container mb-3 pt-2">
-            <div class="col-md pr-2 justify-content-center">
-              <img class="img-fluid rounded mh-100" src="assets/img/service2.jpg">
+          <div class="row home-service-container">
+            <div class="col-md pr-md-2 justify-content-center">
+              <img class="img-fluid rounded mh-100" src="assets/img/GDS.png">
             </div>
-            <div class="col-md">
-              <h3 class="service-title mb-3">Subsurface Exploration Procedures</h3>
-              <p class="text-justify">
-                  We drill soil borings with our truck-mounted drilling equipment using continuous flight augers (solid stem or hollow stem) to either the termination depth of the borings or <a href="javascript:void" class="text-decoration-none" data-toggle="tooltip" title="The auger refusal in our industry generally defines as 2 inches or less advancement within one-minute time slut. The auger refusal not only happens within rock strata but also can happen within highly cemented calcium carbonated soils known as &quot;Caliche&quot;.">auger refusal</a>
-                  depth whichever comes first. Soil samples will be collected at depths requested by the client.</p>
-              <ul class="fa-ul">
-                <li>
-                  <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>
-                  <a href="javascript:void()" class="text-decoration-none" data-container="body" data-toggle="popover" data-trigger="hover focus" data-title="Undisturbed Soil Sampling" data-content="Cohesive soil samples are generally recovered using open-tube (a.k.a. Shelby tube) samplers. Hand penetrometer tests are performed on samples of cohesive soils in the field to serve as a general measure of consistency the hand penetration test is performed in general accordance with ASTM WK27337.">Undisturbed Soil Sampling</a>
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>
-                  <a href="javascript:void()" class="text-decoration-none" data-container="body" data-toggle="popover" data-trigger="hover focus" data-title="Disturbed Soil Sampling" data-content="Cohesionless soils are generally sampled by means of the Standard Penetration Test (SPT). This test consists of measuring the number of blows (N-value) required for a 140-pound hammer free falling 30 inches to drive a standard split-spoon sampler 12 inches into the subsurface material after being seated six inches. These blow counts or SPT N-values are used to evaluate the stratum. The test is conducted in general accordance with the procedure outlines in ASTM D1586 / D1586M - 18 document.">Disturbed Soil Sampling</a>
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>
-                  <a href="javascript:void()" class="text-decoration-none" data-container="body" data-toggle="popover" data-trigger="hover focus" data-title="Rock Core Sampling" data-content="If sampling from an encountered rock stratum is required, we can core the subsurface rock with our NX-size (2.154 inches ID) double tube, diamond teeth coring equipment. The samples will be retrieved and be placed in core-boxes and the Recovery and RQD of the cored stratum will be reported in our field logs.">
-Disturbed Soil Sampling</a>
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>
-                  <a href="javascript:void()" class="text-decoration-none" data-container="body" data-toggle="popover" data-trigger="hover focus" data-title="Field Logging" data-content="We also can provide logging services, if requested. In that case, our exploration team prepares a field log per boring which contains information such as sampling depths, penetration distances, visual classifications of materials encountered, our interpretation of subsurface conditions between samples.">
-Field Logging</a>
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>
-                  <a href="javascript:void()" class="text-decoration-none" data-container="body" data-toggle="popover" data-trigger="hover focus" data-title="Groundwater-Table Measurements" data-content="We also record groundwater depth where the first seepage is encountered and within time intervals defined by the engineers. In addition, we can install piezometers, if groundwater elevation in a broader period of time is planned to be measured and recorded.">
-Groundwater-Table Measurements</a>
-                </li>
-              </ul>
+            <div class="col-md mx-md-2">
+              <h3 class="service-title mb-3 mt-md-0 mt-2">Geotechnical Drilling and Sampling <small><em>(Coming Soon)</em></small></h3>
+              <p class="text-justify service-description">
+                The major factor that differentiate us from other drilling firms will be the technical knowledge and experience of our crew in geotechnical engineering field. We know the importance of precise sampling, detailed logging & reporting and your satisfaction is guaranteed!</p>
+              <div class="text-center">
+                <a class="btn btn-brand" href="services-drilling.html">Learn More</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
+    <!-- ./main-content -->
     <footer class="footer bg-dark py-3">
       <div class="container">
         <div class="row">
@@ -147,9 +152,6 @@ Groundwater-Table Measurements</a>
                   <a href="services.html" class="text-muted">Our services</a>
                 </li>
                 <li>
-                  <a href="knowledge.html" class="text-muted">Knowledge</a>
-                </li>
-                <li>
                   <a href="blog.html" class="text-muted">News</a>
                 </li>
               </ul>
@@ -158,9 +160,7 @@ Groundwater-Table Measurements</a>
           <div class="col-6 col-md">
             <div class="widget">
               <h5 class="text-light">Get in touch</h5>
-              <address class="text-white-50"> <strong>Nickan Exploration Services</strong><br>
-							1234 Sunshine Street<br>
-							Midland Texas 77027, USA </address>
+              <p class="text-white-50 strong">Nickan Exploration Services</p>
               <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nickanexp.com </p>
             </div>
           </div>
@@ -173,7 +173,7 @@ Groundwater-Table Measurements</a>
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Email" aria-describedby="subscribe-button">
                   <div class="input-group-append">
-                    <button class="btn btn-secondary" type="submit" id="subscribe-button">Subscribe</button>
+                    <button class="btn btn-brand" type="submit" id="subscribe-button">Subscribe</button>
                   </div>
                 </div>
               </form>
@@ -200,3 +200,6 @@ Groundwater-Table Measurements</a>
     </section>
   </body>
 </html>
+<!--[Pinegrow components saved data - this data is no longer used in the component. We're saving it just in case. Clear this with Components -> Clear saved unused edits]<li class="nav-item" data-pgc-field="menu-knowledge">
+    <a class="nav-link" href="knowledge.html">Knowledge</a>
+</li>-->

@@ -6,6 +6,11 @@
     <meta name="description" content="Nickan Exploration Services official homepage">
     <meta name="author" content="NES group">
     <title data-pgc-field="page.title">NES Homepage</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/"> -->
     <!-- Bootstrap core CSS -->
     <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css">
@@ -29,23 +34,26 @@
           </li>
           <li class="nav-item dropdown active" data-pgc-field="menu-services">
             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services </a>
+              Services</a>
             <div class="dropdown-menu" aria-labelledby="serviesDropdown">
-              <a class="dropdown-item" href="services.html">Drilling and Sampling</a>
               <a class="dropdown-item" href="services-mapping.html">Subsurface Mapping</a>
+              <a class="dropdown-item" href="services-aerial.html">Aerial Imaging</a>
+              <a class="dropdown-item" href="services-drilling.html">Drilling and Sampling</a>
             </div>
           </li>
-          <li class="nav-item" data-pgc-field="menu-knowledge">
-            <a class="nav-link" href="knowledge.html">Knowledge</a>
-          </li>
-          <li class="nav-item" data-pgc-field="menu-careers">
-            <a class="nav-link" href="careers.html">Careers</a>
+          <li class="nav-item dropdown" data-pgc-field="menu-careers">
+            <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Careers</a>
+            <div class="dropdown-menu" aria-labelledby="careersDropdown">
+              <a class="dropdown-item" href="careers-drone.html">Drone Operator</a>
+              <a class="dropdown-item" href="careers-locator.html">Utility Locator</a>
+            </div>
           </li>
           <li class="nav-item" data-pgc-field="menu-equipments">
             <a class="nav-link" href="equipments.html">Equipments</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-blog">
-            <a class="nav-link" href="blog.html">News</a>
+            <a class="nav-link" href="blog.html">News and Articles</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-about">
             <a class="nav-link" href="about.html">About</a>
@@ -64,26 +72,39 @@
       </div>
     </nav>
     <div class="main-content" data-pgc-field="main.content">
-      <section class="equipments-section">
+      <section class="equipments-section py-3">
         <div class="container">
-          <h1 class="section-title text-brand pt-3">Equipments</h1>
-          <div class="card mb-3">
+          <h1 class="section-title text-brand">Equipments</h1>
+          <div class="card card-equipment mb-3">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="assets/img/equipments/eq-locator.png" class="card-img-top" alt="Core Barrel">
+                <img src="assets/img/equipments/GPRover.png" class="card-img-top" alt="GPRover">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">GPRover</h5>
+                  <h5 class="card-title">GPRover <small><em>(the beast)</em></small></h5>
                   <p class="card-text">We utilize GPRover which is built on the award-winning Triple Bandwidth technology. Triple bandwidth offers drastically more depth as well as higher resolution than any other imaging technology on the market. In this technique three different waves with frequencies of 1000, 500, and 250 megahertz are prospected to the underlying subgrade which will provide the upmost resolution and deeper decay depth in compression with single and dual signal GPRs. This technology provides 2-inch resolution within the maximum decay depth of waves which can assist tasks from estimating the thickness of the pavement within the upper couple of inches of subgrade to presence of a utility line at depth as deep as 15 feet.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card card-equipment mb-3">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="assets/img/equipments/eq-locator.png" class="card-img-top" alt="Core Barrel">
+                <img src="assets/img/equipments/Q5C.png" class="card-img-top" alt="GPR-Q5C">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">GPR-Q5C</h5>
+                  <p class="card-text">Simply put, the Q5C Plus is a buried utility location workhorse. It is easy to use yet it can be expanded and configured for other applications and needs down the road. With its unique range of integrated technologies, it is the most powerful GPR on the market today for locating utilities up to 15’ (5m) deep at high resolution.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-equipment mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="assets/img/equipments/RD8100.png" class="card-img-top" alt="RD8100">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -94,9 +115,24 @@
               </div>
             </div>
           </div>
+          <div class="card card-equipment mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="assets/img/equipments/Mavic-PRO.png" class="card-img-top" alt="Mavic PRO">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Mavic Pro</h5>
+                  <p class="card-text">The DJI Mavic Pro is a small yet powerful drone that can serve as eyes of engineers to see the inaccessible locations or present their products or reports in a higher level. Mavic Pro has a 20 Mega pixel camera and has capacity of 4K video recording with many useful flight-mode features such as waypoint flight mode.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- ./container -->
+      </section>
     </div>
+    <!-- ./main-content -->
     <footer class="footer bg-dark py-3">
       <div class="container">
         <div class="row">
@@ -114,9 +150,6 @@
                   <a href="services.html" class="text-muted">Our services</a>
                 </li>
                 <li>
-                  <a href="knowledge.html" class="text-muted">Knowledge</a>
-                </li>
-                <li>
                   <a href="blog.html" class="text-muted">News</a>
                 </li>
               </ul>
@@ -125,9 +158,7 @@
           <div class="col-6 col-md">
             <div class="widget">
               <h5 class="text-light">Get in touch</h5>
-              <address class="text-white-50"> <strong>Nickan Exploration Services</strong><br>
-							1234 Sunshine Street<br>
-							Midland Texas 77027, USA </address>
+              <p class="text-white-50 strong">Nickan Exploration Services</p>
               <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nickanexp.com </p>
             </div>
           </div>
@@ -140,7 +171,7 @@
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Email" aria-describedby="subscribe-button">
                   <div class="input-group-append">
-                    <button class="btn btn-secondary" type="submit" id="subscribe-button">Subscribe</button>
+                    <button class="btn btn-brand" type="submit" id="subscribe-button">Subscribe</button>
                   </div>
                 </div>
               </form>
@@ -161,3 +192,6 @@
 </section>
   </body>
 </html>
+<!--[Pinegrow components saved data - this data is no longer used in the component. We're saving it just in case. Clear this with Components -> Clear saved unused edits]<li class="nav-item" data-pgc-field="menu-knowledge">
+    <a class="nav-link" href="knowledge.html">Knowledge</a>
+</li>-->

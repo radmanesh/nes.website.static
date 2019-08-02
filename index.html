@@ -6,6 +6,11 @@
     <meta name="description" content="Nickan Exploration Services official homepage">
     <meta name="author" content="NES group">
     <title data-pgc-field="page.title">NES Homepage</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/"> -->
     <!-- Bootstrap core CSS -->
     <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css">
@@ -29,23 +34,26 @@
           </li>
           <li class="nav-item dropdown" data-pgc-field="menu-services">
             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services </a>
+              Services</a>
             <div class="dropdown-menu" aria-labelledby="serviesDropdown">
-              <a class="dropdown-item" href="services.html">Drilling and Sampling</a>
               <a class="dropdown-item" href="services-mapping.html">Subsurface Mapping</a>
+              <a class="dropdown-item" href="services-aerial.html">Aerial Imaging</a>
+              <a class="dropdown-item" href="services-drilling.html">Drilling and Sampling</a>
             </div>
           </li>
-          <li class="nav-item" data-pgc-field="menu-knowledge">
-            <a class="nav-link" href="knowledge.html">Knowledge</a>
-          </li>
-          <li class="nav-item" data-pgc-field="menu-careers">
-            <a class="nav-link" href="careers.html">Careers</a>
+          <li class="nav-item dropdown" data-pgc-field="menu-careers">
+            <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Careers</a>
+            <div class="dropdown-menu" aria-labelledby="careersDropdown">
+              <a class="dropdown-item" href="careers-drone.html">Drone Operator</a>
+              <a class="dropdown-item" href="careers-locator.html">Utility Locator</a>
+            </div>
           </li>
           <li class="nav-item" data-pgc-field="menu-equipments">
             <a class="nav-link" href="equipments.html">Equipments</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-blog">
-            <a class="nav-link" href="blog.html">News</a>
+            <a class="nav-link" href="blog.html">News and Articles</a>
           </li>
           <li class="nav-item" data-pgc-field="menu-about">
             <a class="nav-link" href="about.html">About</a>
@@ -68,9 +76,12 @@
         <div class="container ">
           <div class="header-container row  justify-content-center">
             <div class="header-content col-lg-10">
-              <h1 class="header-title text-brand">Nickan Exploration Services</h1>
+              <h1 class="header-title text-brand d-none">Nickan Exploration Services</h1>
+              <div class="header-logo mb-3">
+                <img class="w-25" src="assets/img/nes-logo1.png">
+              </div>
               <p class="header-description lead">
-                That is our destiny and we in NES trying to bring the utmost quality in our work to assure the society that they are receiving the highest level of service that they deserve. </p>
+                NES provides Subsurface Mapping, Aerial Imaging, and Geotechnical Drilling Services. However, we are located in Houston but we cover projects within 200 miles radius of Houston's downtown. See Contact Us for more details.</p>
               <a href="about.html" class="btn btn-brand">learn more</a>
             </div>
           </div>
@@ -81,37 +92,14 @@
           <h1 class="section-title text-brand">Services</h1>
           <div class="row home-service-container">
             <div class="col-md pr-md-2 justify-content-center">
-              <img class="img-fluid rounded mh-100" src="assets/img/service2.jpg">
+              <img class="img-fluid rounded mh-100" src="assets/img/SUL.jpg">
             </div>
             <div class="col-md mx-md-2">
-              <h3 class="service-title mb-3">Geotechnical Drilling and Sampling</h3>
-              <div class="home-services-list">
-                <div>
-                  <i class="fas fa-circle fa-fw mr-1 text-brand"></i> Boring Layout
-                </div>
-                <div>
-                  <i class="fas fa-circle fa-fw mr-1 text-brand"></i> Boring Elevations and Sampling Depths
-                </div>
-                <div>
-                  <i class="fas fa-circle fa-fw mr-1 text-brand"></i> Subsurface Exploration Procedures
-                </div>
-              </div>
-              <div class="text-center">
-                <a class="btn btn-brand" href="services.html">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <hr class="border-brand">
-          <div class="row home-service-container">
-            <div class="col-md pl-md-2 order-md-last justify-content-center">
-              <img class="img-fluid rounded mh-100" src="assets/img/service3.png">
-            </div>
-            <div class="col-md mx-2 order-md-first ">
-              <h3 class="service-title mb-3">Subsurface Mapping</h3>
-              <p class="text-justify service-description">The non-invasive subsurface mapping is performed by utilizing the most recent applications of geophysics to draw a 2D or 3D images of what is underlying an innocent surface.</p>
+              <h3 class="service-title mb-3 mt-md-0 mt-2">Subsurface Mapping</h3>
               <div class="sub-service">
-                <h4 class="sub-service-title text-muted">Subsurface Utility Locating</h4>
-                <p class="text-justify service-description">In NES we provide SUM services which will help developers, excavators, drillers, engineers and other team members to have a better understanding of what they should expect to see at their sites.</p>
+                <h4 class="sub-service-title text-muted">Subsurface Utility Locating/Mapping</h4>
+                <p class="text-justify service-description">NES provides SUL/SUM services which help developers, excavators, drillers, engineers and other team members to have a better understanding of what they should expect to see at their sites. <br>
+                  In addition to marking the underground utilities or detectable buried elements at site, we prepare our deliverables in three different format listed below: </p>
                 <ul class="fa-ul text-left service-features-list">
                   <li>
                     <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>SUM-Basic Report
@@ -123,13 +111,38 @@
                     <span class="fa-li"><i class="fas fa-circle text-brand"></i></span>SUM-ULT Report
                   </li>
                 </ul>
-              </div>
-              <div class="sub-service">
-                <h4 class="sub-service-title text-muted">Aerial Imaging</h4>
-                <p class="text-justify service-description">NES provides aerial imaging services by utilizing drone technology to record high-resolution videos and capture high-quality pictures.</p>
+                <p class="text-justify">
+                  By utilizing Triple Bandwidth technology, we can also detect thickness of the pavement layers and demonestrate them in our drawings and reports. Ask our representative to learn more. </p>
               </div>
               <div class="text-center">
                 <a class="btn btn-brand" href="services-mapping.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <hr class="border-brand">
+          <div class="row home-service-container">
+            <div class="col-md pl-md-2 order-md-last justify-content-center">
+              <img class="img-fluid rounded mh-100" src="assets/img/AI.jpg">
+            </div>
+            <div class="col-md mx-2 order-md-first ">
+              <h3 class="service-title mb-3 mt-md-0 mt-2">Aerial Imaging</h3>
+              <p class="text-justify service-description">NES provides aerial imaging services by utilizing drone technology to record high-resolution videos and capture high-quality pictures.</p>
+              <div class="text-center">
+                <a class="btn btn-brand" href="services-aerial.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <hr class="border-brand">
+          <div class="row home-service-container">
+            <div class="col-md pr-md-2 justify-content-center">
+              <img class="img-fluid rounded mh-100" src="assets/img/GDS.png">
+            </div>
+            <div class="col-md mx-md-2">
+              <h3 class="service-title mb-3 mt-md-0 mt-2">Geotechnical Drilling and Sampling <small><em>(Coming Soon)</em></small></h3>
+              <p class="text-justify service-description">
+                The major factor that differentiate us from other drilling firms will be the technical knowledge and experience of our crew in geotechnical engineering field. We know the importance of precise sampling, detailed logging & reporting and your satisfaction is guaranteed!</p>
+              <div class="text-center">
+                <a class="btn btn-brand" href="services-drilling.html">Learn More</a>
               </div>
             </div>
           </div>
@@ -139,8 +152,8 @@
         <div class="container">
           <h1 class="section-title text-brand">About Us</h1>
           <div class="about-description text-center">
-            <p class="">
-We are providing exploration services, please see our Services page to have a better understanding that in which areas we can help you. </p>
+            <p class=" text-justify">
+NES provides Subsurface Mapping, Aerial Imaging, and Geotechnical Drilling Services. In NES, we are bringing the engineering vision to our work to increase preciseness, quality, and efficiency. However, we are located in Houston but we cover projects within 200 miles radius of Houston's downtown. Please see Contact US for more details.</p>
           </div>
         </div>
       </section>
@@ -239,10 +252,6 @@ We are providing exploration services, please see our Services page to have a be
               <h3 class="mb-3">Contact Details</h3>
               <ul class="fa-ul ">
                 <li>
-                  <i class="fas fa-map-marker-alt fa-lg fa-li fa-fw text-brand"></i>
-                  <span><address class="text-dark d-inline">1234 Sunshine Street, Midland Texas 77027, USA </address></span>
-                </li>
-                <li>
                   <i class="fas fa-phone fa-li fa-fw fa-lg text-brand"></i>
                   <span>(+1) (432) 232-8476</span>
                 </li>
@@ -252,16 +261,17 @@ We are providing exploration services, please see our Services page to have a be
                 </li>
               </ul>
               <div class="contact-socail transition text-center">
-                <a href="" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-facebook fa-stack-1x fa-inverse"></i> </span> </a>
-                <a href="" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span></a>
-                <a href="" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-pinterest fa-stack-1x fa-inverse"></i></span></a>
-                <a href="" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+                <a href="https://www.linkedin.com/company/nickan-exploration-services/?viewAsMember=true" target="_blank" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i> </span> </a>
+                <a href="" target="_blank" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-youtube fa-stack-1x fa-inverse"></i></span></a>
+                <a href="" target="_blank" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+                <a href="https://www.instagram.com/nickanexp" target="_blank" class="text-reset"> <span class="fa-stack"> <i class="fas fa-circle fa-stack-2x"></i> <i class="fab fa-facebook fa-stack-1x fa-inverse"></i></span></a>
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
+    <!-- ./main-content -->
     <footer class="footer bg-dark py-3">
       <div class="container">
         <div class="row">
@@ -279,9 +289,6 @@ We are providing exploration services, please see our Services page to have a be
                   <a href="services.html" class="text-muted">Our services</a>
                 </li>
                 <li>
-                  <a href="knowledge.html" class="text-muted">Knowledge</a>
-                </li>
-                <li>
                   <a href="blog.html" class="text-muted">News</a>
                 </li>
               </ul>
@@ -290,9 +297,7 @@ We are providing exploration services, please see our Services page to have a be
           <div class="col-6 col-md">
             <div class="widget">
               <h5 class="text-light">Get in touch</h5>
-              <address class="text-white-50"> <strong>Nickan Exploration Services</strong><br>
-							1234 Sunshine Street<br>
-							Midland Texas 77027, USA </address>
+              <p class="text-white-50 strong">Nickan Exploration Services</p>
               <p class="text-white-50"> <i class="icon-phone"></i> (+1) (432) 232-8476 <br> <i class="icon-envelope-alt"></i> arad@nickanexp.com </p>
             </div>
           </div>
@@ -305,7 +310,7 @@ We are providing exploration services, please see our Services page to have a be
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Email" aria-describedby="subscribe-button">
                   <div class="input-group-append">
-                    <button class="btn btn-secondary" type="submit" id="subscribe-button">Subscribe</button>
+                    <button class="btn btn-brand" type="submit" id="subscribe-button">Subscribe</button>
                   </div>
                 </div>
               </form>
@@ -326,3 +331,6 @@ We are providing exploration services, please see our Services page to have a be
 </section>
   </body>
 </html>
+<!--[Pinegrow components saved data - this data is no longer used in the component. We're saving it just in case. Clear this with Components -> Clear saved unused edits]<li class="nav-item" data-pgc-field="menu-knowledge">
+    <a class="nav-link" href="knowledge.html">Knowledge</a>
+</li>-->
